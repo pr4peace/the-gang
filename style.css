@@ -64,6 +64,9 @@ box-shadow: 0 0 0 10px rgba(0,127,255,0.15);
 padding: 20px 30px;
 border-radius: 10px;
 text-decoration: none;
+cursor: pointer;
+outline: none;
+border: none;
 }
 
 a.cta.alt, 
@@ -74,6 +77,11 @@ color:black;
 outline-color: rgba(0,0,0,0.15);
 }
 
+a.cta:active, 
+button.cta:active
+{
+	opacity: 70%;
+}
 
 
 .character1
@@ -116,6 +124,7 @@ nav
 	background-color: white;
 	box-shadow: 0 5px 8px rgba(0,0,0,.2);
 	position: sticky;
+	z-index: 1;
 	top:0;
 }
 
@@ -195,4 +204,115 @@ line-height: 50px;
 font-weight: 800;
 }
 
+.sep
+{
+width: 470px;
+height: 10px;
+background-color: #111111;
+margin: 70px auto;
 
+}
+
+.nblist
+{
+	width: 470px;
+	background-color: #EDEDED;
+	padding: 20px 20px 0 20px;
+	box-sizing: border-box;
+	float: left;
+	margin: 0px 20px 20px 0px;
+	position: relative;
+}
+
+.nblist li
+{
+	height: 70px;
+	border-radius: 10px;
+	font-size: 40px;
+	font-weight: bold;
+	display: block;
+	color:white;
+	background-color: #EDEDED;
+	margin-bottom: 20px;
+	padding: 5px 20px;
+	box-sizing: border-box;
+}
+.nblist li.red 
+{
+	background-color:#FF3300;
+}
+
+.nblist li.blue 
+{
+	background-color:#007FFF;
+}
+
+.nblist li.grey 
+{
+	background-color:rgb(0,0,0,0.1);
+}
+
+.nblist li.pink 
+{
+	background-color: #FFADF9;
+}
+
+.nblist li.yellow 
+{
+	background-color:#FFD400;
+	color: #111111;
+}
+
+.nblist li.salmon 
+{
+	background-color:#FA8072;
+}
+
+
+.story h3
+{
+	font-size: 40px;
+}
+
+.the-gang-image
+{
+	display:block;
+	margin: 0 auto;
+}
+
+.nblist li.dragging
+{
+	position: absolute;
+	top: 70px;
+	left: 70px;
+	right: -30px;
+	transform: rotate(6deg);
+	box-shadow: 0 2px 14px rgba(0,0,0,0.3);
+}
+
+.nblist li.dragging:after
+{
+	content:"";
+	display: block;
+	position: absolute;
+	width: 54px;
+	height: 60px;
+	background: url(img/hand.png) no-repeat 0 0 ;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	bottom: -30px;
+	left: 60%;
+}
+footer
+{
+	text-align: center;
+	color: rgba(0,0,0,0.4);
+	font-size: 20px;
+	font-weight: bold;
+	margin: 85px 0 45px;
+}
+
+.popup
+{
+	display:none;
+}

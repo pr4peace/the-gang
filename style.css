@@ -10,9 +10,12 @@ body{
 .hero-banner
 {
 background-color: #007FFF;
-height: 100vh;
+height: 90vh;
 padding: 50px 20px;
 box-sizing: border-box;
+position: relative;
+overflow: hidden;
+
 }
 
 .wrapper
@@ -75,15 +78,35 @@ outline-color: rgba(0,0,0,0.15);
 
 .character1
 {
-
+	background: url(img/circle-guy.png) no-repeat 0 0 ;
+	background-size: 100%;
+width:363px;
+height: 344px;
+position: absolute;
+top: 10%;
+right:20%;
+transform: rotate(15deg);
 }
 .character2
 {
-
+	background: url(img/eish-guy.png) no-repeat 0 0 ;
+	background-size: 65%;
+width:309px;
+height: 371px;
+position: absolute;
+top: 35%;
+right:5%;
 }
 
 .character3
 {
+	background: url(img/sticky-guy-1.png) no-repeat 0 0 ;
+	background-size: 65%;
+width: 297px;
+height: 286px;
+position: absolute;
+bottom: 74px;
+right: 25%;
 
 }
 /*
